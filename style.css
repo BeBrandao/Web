@@ -1,6 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+header {
+    background-color: white;
+    width: 99vw;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+header a:active {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: yellow;
+    transition: 0.2s;
+}
+
+*:focus {
+    outline: 2px solid black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: white;
-    box-shadow: 0px 0px 1px 1px;
+    width: 70%;
+    border:0.5px solid grey;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 15px;
+}
+
+input[type=email]:valid {
+    border: 1px solid black;
+     background-color: rgb(193, 245, 158);
+}
+
+input[type=email]:invalid {
+    border: 1px solid black;
+     background-color: rgb(245, 158, 158);
+}
+
+.conferir:required {
+    background-color: rgb(252, 187, 187);
+}
+
+input, select, textarea {
+    width: 200px;
 }
