@@ -5,14 +5,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <a href="#email">E-mail</a>
+        <a href="#nome">Nome</a>
+        <a href="#genero">Gênero</a>
+        <a href="#curso">Curso</a>
+        <a href="#descricao">Descrição</a>
+    </header>
     <div class="container">
         <h1>Formulário</h1>
         <h2>Preencha os campos</h2>
         <form action="">
             <p>E-mail:</p>
-            <input type="text" placeholder="Digite seu e-mail"><br>
+            <input type="email" placeholder="Digite seu e-mail" class="conferir" required id="email"><br>
             <p>Nome:</p>
-            <input type="text" placeholder="Digite seu nome"><br>
+            <input type="text" placeholder="Digite seu nome" class="conferir" required id="nome"><br>
             <p>Genero:</p>
             <select name="Genero" id="genero">
                 <option value=""  style="display:none;"></option>
@@ -27,7 +34,8 @@
                 <option value="Info">Eletrônica</option>
             </select>
             <p>Descreva você:</p>
-            <textarea name="Descricao" id="descricao" cols="30" rows="7"></textarea>
+            <textarea name="Descricao" id="descricao" cols="30" rows="7"></textarea><br>
+            <button>Enviar</button>
         </form>
     </div>
 </body>
