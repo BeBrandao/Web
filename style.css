@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    background-image: linear-gradient(45deg, #5932CD, #28165f, #130a2c);
+    background-image: linear-gradient(45deg, #341d78, #28165f);
     font-family: "SUSE", sans-serif;
     background-size: cover;
 }
 
 header {
-    background-color: white;
+    background-color: #130a2c;
     width: 99vw;
     height: 125px;
     border: 1px solid black;
@@ -24,25 +28,27 @@ header {
 }
 
 header a {
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 20px;
     border-radius: 5px;
     text-decoration: none;
-    color: black;
+    color: white;
+    width: 65px;
+    text-align: center;
 }
 
 header a:hover {
     border: 1px solid black;
     padding: 20px;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: #5932CD;
 }
 
 header a:active {
     border: 1px solid black;
     padding: 20px;
     border-radius: 5px;
-    background-color: yellow;
+    background-color: #28165f;
     transition: 0.2s;
 }
 
