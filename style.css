@@ -37,6 +37,7 @@ header a {
     text-align: center;
 }
 
+/*Questao 1*/
 header a:hover {
     border: 1px solid black;
     padding: 20px;
@@ -71,8 +72,8 @@ form{
     border:0.5px solid grey;
     box-shadow: 2px 2px 3px black;
     border-radius: 15px;
-    margin-top: 165px;
-    padding-bottom: 5px;
+    margin-top: 95px;
+    padding-bottom: 7px;
 }
 
 input[type=email]:valid {
@@ -102,13 +103,7 @@ button {
     border-radius: 5px;
     width: 75px;
 }
-
-img {
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-    margin: 10px;
-}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .imagens {
     display: grid;
@@ -119,32 +114,108 @@ img {
     grid-template-rows: auto 1fr;
     column-gap: 10rem;
     align-content: center;
+    margin-top: 0px;
 }
 
-.Foto__bernardo__titulo{
+.Foto__bernardo__titulo {
     grid-area: Titulobernardo;
 }
 
-.Foto_lele_titulo{
+.Foto_lele_titulo {
     grid-area: Titulolele;
 }
 
-.Foto__bernardo__imagem{
+.Foto__bernardo__imagem {
     grid-area: Fotobernardo;
     transition: transform 0.5s ease-out;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 10px;
 }
 
-.Foto__lele__imagem{
+.Foto__lele__imagem {
     grid-area:  Fotolele;
     transition: transform 0.5s ease-out;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
 
-.Foto__bernardo__imagem:hover{
+/*Questao 2*/
+.Foto__bernardo__imagem:hover {
     grid-area: Fotobernardo;
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
-.Foto__lele__imagem:hover{
+.Foto__lele__imagem:hover {
     grid-area:  Fotolele;
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
+
+.Foto__bernardo__imagem:focus {
+    border: 6px solid blueviolet;
+    outline: none;
+}
+
+.Foto__lele__imagem:focus {
+    border: 6px solid blueviolet;
+    outline: none;
+}
+
+.imagens img:nth-child(even):hover {
+    transition: 1s;
+    filter: brightness(70%);
+}
+
+.imagens img:nth-child(odd):hover {
+    transition: 1s;
+    filter: brightness(60%);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.estrelas {
+    margin-top: 0px; 
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.estrelas input[type=radio]{
+    display: none;
+}
+
+.estrelas label i.estrelas__estrela{
+    font-size: 2.5em;
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900; 
+    
+}
+
+/*Questao 3*/
+.estrelas label i.estrelas__estrela:before{
+    content:'\f005';
+    color: #FC0;
+}
+
+.estrelas label:hover ~ label i.estrelas__estrela:before,
+.estrelas label:hover i.estrelas__estrela:before {
+    color: #CCC; 
+}
+
+
+.estrelas input[type=radio]:checked ~ label i.estrelas__estrela:before {
+    color: #CCC; 
+}
+
+
+.estrelas input[type=radio]:checked ~ label + label i.estrelas__estrela:before {
+    color: #CCC; 
+}
+
+
+.estrelas input[type=radio]:focus + label i.estrelas__estrela:before {
+    color: #FC0; 
+    outline: 2px solid #FC0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

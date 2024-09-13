@@ -3,6 +3,7 @@
 <head>
     <title>Forms</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -40,19 +41,27 @@
         <h1>Feito por:</h1>
         <div class="imagens">
             <h2 class="Foto__bernardo__titulo">Bernardo Abreu:</h2>
-            <img src="placeholder.svg" alt="placeholder" class="Foto__bernardo__imagem">
+            <img src="Bernardo.jpg" alt="Bernardo" class="Foto__bernardo__imagem" id="foto">
             <h2 class="Foto_lele_titulo">Leticia Alves:</h2>
-            <img src="placeholder.svg" alt="placeholder" class="Foto__lele__imagem">
+            <img src="leticia.jpg" alt="Leticia" class="Foto__lele__imagem" id="foto">
         </div>
     </div>
     <div class="estrelas"></div>
     <div class="container" id="estrelas">
         <h1>Avalie nosso site:</h1>
-        <img src="placeholder.svg" alt="placeholder"><input type="checkbox">
-        <img src="placeholder.svg" alt="placeholder"><input type="checkbox">
-        <img src="placeholder.svg" alt="placeholder"><input type="checkbox">
-        <img src="placeholder.svg" alt="placeholder"><input type="checkbox">
-        <img src="placeholder.svg" alt="placeholder"><input type="checkbox">
+        <div class="estrelas">
+            <input type="radio" id="estrela__inicial" name="estrelas__estrela" value="" checked/>
+            <label for="estrela__1"><i class="estrelas__estrela"></i></label>
+            <input type="radio" id="estrela__1" name="estrelas__estrela" value="1"/>
+            <label for="estrela__2"><i class="estrelas__estrela"></i></label>
+            <input type="radio" id="estrela__2" name="estrelas__estrela" value="2"/>
+            <label for="estrela__3"><i class="estrelas__estrela"></i></label>
+            <input type="radio" id="estrela__3" name="estrelas__estrela" value="3"/>
+            <label for="estrela__4"><i class="estrelas__estrela"></i></label>
+            <input type="radio" id="estrela__4" name="estrelas__estrela" value="4"/>
+            <label for="estrela__5"><i class="estrelas__estrela"></i></label>
+            <input type="radio" id="estrela__5" name="estrelas__estrela" value="5"/>
+          </div>
     </div>
 </body>
 </html>
