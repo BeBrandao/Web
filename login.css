@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: #341d78;
+    font-family: "SUSE", sans-serif;
+    background-size: cover;
+}
+input:focus {
+    outline: 1px solid black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    border:0.5px solid grey;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 15px;
+    margin-top: 145px;
+    padding-bottom: 5px;
+}
+
+input[type=email]:valid {
+    border: 1px solid black;
+     background-color: rgb(193, 245, 158);
+     font-family: "SUSE", sans-serif;
+}
+
+input[type=email]:invalid {
+    border: 1px solid black;
+     background-color: rgb(245, 158, 158);
+     font-family: "SUSE", sans-serif;
+}
+
+.conferir:required {
+    background-color: rgb(252, 187, 187);
+}
+
+input {
+    border: 1.5px solid black;
+    width: 200px;
+    font-family: "SUSE", sans-serif;
+}
+
+a {
+    font-family: "SUSE", sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    width: 75px;
+}
+
+a:hover {
+    background-color: #ae9ce2;
+}
+
+a:active {
+    background-color: #6148ad;
+}
